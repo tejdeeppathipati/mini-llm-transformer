@@ -1,0 +1,9 @@
+venv/
+data/
+src/models/
+*.pth
+*.csv
+*.ckpt
+*.h5
+.DS_Store
+.ipynb_checkpoints/
