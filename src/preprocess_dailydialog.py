@@ -3,7 +3,7 @@ import pandas as pd
 
 # Step 1: Load the full DailyDialog dataset (13k+ dialogues)
 dataset = load_dataset("daily_dialog")
-sample = dataset["train"]  # ⬅️ Use full dataset
+sample = dataset["train"]  #Use full dataset
 
 # Step 2: Create input-output pairs from all conversations
 inputs = []
@@ -24,7 +24,7 @@ for dialogue in sample:
 df = pd.DataFrame({"input": inputs, "output": outputs})
 df.to_csv("../data/dailydialog_pairs.csv", index=False)
 
-print("✅ Saved full DailyDialog pairs to ../data/dailydialog_pairs.csv")
+print("Saved full DailyDialog pairs to ../data/dailydialog_pairs.csv")
 print(df.head())
 print(f"Total pairs: {len(df)}")
 
